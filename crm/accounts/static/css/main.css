@@ -1,0 +1,20 @@
+
+
+  #total-orders {
+    background-color:  #78E847  ;
+    border: none;
+  } 
+  #orders-delivered {
+    background-color: #F18626    ;
+    border: none;
+  }
+  #orders-pending {
+    background-color: #F1264B    ;
+    border: none;
+  }
+ .logo
+ {
+     border-radius: 8px;
+     padding: 0px;
+     width: 100px;
+ }

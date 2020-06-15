@@ -1,5 +1,102 @@
 {% extends 'accounts/main.html'  %}
 
 {% block content  %}
-<p>Customers</p>
+<br>
+<br>
+<div class="container-flui">
+    <div class="row justify-content-md-center">
+       <div class="col">
+        <div class="col-md">
+            <div class="card  ">
+                <div class="card-header bg-white ">
+                    <h4 class="m-0 font-weight-bold">Customer</h4>
+                </div>
+                <div class="card-body">
+                  
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  <button type="button" class="btn btn-success  btn-block">
+                      <i class="fas fa-user-edit fa-sm"></i>
+                         Update Customer
+                    </button>
+                  <button type="button" class="btn btn-danger  btn-block">
+                      <i class="fas fa-user-minus fa-sm"></i>
+                         Delete Customer
+                    </button>
+
+                </div>
+              </div>
+          </div>
+       </div>
+          
+       <div class="col">
+        <div class="col-md">
+            <div class="card" >
+                <div class="card-header bg-white ">
+                    <h4 class="m-0 font-weight-bold">Contact Information</h4>
+                </div>
+                <div class="card-body">
+                    <p class="font-weight-bold">Email:</p>
+                    
+                    <p class="font-weight-bold">Phone:</p>
+
+                </div>
+              </div>
+          </div>
+       </div>
+       <div class="col">
+        <div class="col-md">
+            <div class="card ">
+                <div class="card-header bg-white ">
+                    <h4 class="m-0 font-weight-bold">Total Orders</h4>
+                </div>
+                <div class="card-body">
+                  
+                 <h1 style="text-align: center; padding: 36px"></h1>
+                </div>
+              </div>
+          </div>
+       </div>
+      
+    </div>
+
+    <br>
+    <div class="row justify-content-md-center">
+        <div class="col">
+        <div class="col-md">
+            <div class="card card-body">
+                <form class=" navbar-search" method="GET">
+                    <div class="input-group">
+                      <div class="my-2"></div>
+                  <a href="#" class="btn btn-primary btn-icon-split">
+                    <span class="icon text-white-50">
+                      <i class="fas fa-search"></i>
+                    </span>
+                    <span class="text">Search</span>
+                  </a>
+                    </div>
+                  </form>
+            </div>
+            <br>
+            <div class="card card-body">
+                <table class="table">
+                    <tr class="header">
+                        
+                        <th>Product</th>
+                        <th>Category</th>
+                        <th>Date Ordered</th>
+                        <th>Status</th>
+                        <th>Update</th>
+                        <th>Remove</th>
+                    </tr>
+     
+                </table>
+            </div>
+           
+        </div>
+    </div>
+   
+    
+    </div>
+   
+</div>
 {%  endblock %}
