@@ -12,9 +12,6 @@
     background-color: #F1264B    ;
     border: none;
   }
- .logo
- {
-     border-radius: 8px;
-     padding: 0px;
-     width: 100px;
- }
+#accordionSidebar{
+    background-color: black;
+}
