@@ -16,11 +16,22 @@
               
               <table class="table">
                 <tr>
-                    <th></th>
+                  
                     <th>Product</th>
                     <th>Category</th>
-                    <th>Price</th>
+                    <th>Price $</th>
                 </tr>
+
+                {% for i in products %}
+                <tr>
+                 
+                  <td>{{i.name}}</td>
+                  <td>{{i.category}}</td>
+                  <td>{{i.price}}</td>
+                    
+                </tr>
+                {% endfor %}
+                
     
             </table>
             </div>

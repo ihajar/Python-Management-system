@@ -23,10 +23,17 @@
 				<a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-plus fa-sm text-white-50"></i> Create Customer</a>
 				<table class="table table-sm">
 					<tr>
-						<th></th>
+						
 						<th>Customer</th>
-						<th>Orders</th>
+						<th>Phone</th>
 					</tr>
+					{% for cusomter in customers %}
+					<tr>
+					
+						<th style="font-weight: 100;">{{ cusomter.name}}</th>
+						<th style="font-weight: 100;">{{ cusomter.phone}}</th>
+					</tr>
+					{% endfor %}
 	
 				</table>
 			</div>
@@ -49,6 +56,15 @@
 						<th>Update</th>
 						<th>Remove</th>
 					</tr>
+					{% for order in orders %}
+					<tr>
+						<th style="font-weight: 100;">{{ order.product}}</th>
+						<th style="font-weight: 100;">{{ order.date_created}}</th>
+						<th style="font-weight: 100;">{{ order.status}}</th>
+						<td><a href="" >Update</a></td>
+						<td><a href="" >Delete</a></td>
+					</tr>
+					{% endfor %}
 			
 				</table>
 			</div>
