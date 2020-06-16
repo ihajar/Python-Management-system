@@ -35,9 +35,9 @@
                     <h4 class="m-0 font-weight-bold">Contact Information</h4>
                 </div>
                 <div class="card-body">
-                    <p class="font-weight-bold">Email:</p>
+                    <p class="font-weight-bold">Email:  {{customer.email}}</p>
                     
-                    <p class="font-weight-bold">Phone:</p>
+                    <p class="font-weight-bold">Phone:  {{customer.phone}}</p>
 
                 </div>
               </div>
@@ -51,7 +51,7 @@
                 </div>
                 <div class="card-body">
                   
-                 <h1 style="text-align: center; padding: 36px"></h1>
+                 <h1 style="text-align: center; padding: 12px">{{order_count}}</h1>
                 </div>
               </div>
           </div>
@@ -88,6 +88,19 @@
                         <th>Update</th>
                         <th>Remove</th>
                     </tr>
+                    {% for order in orders %}
+                    <tr>
+                        <td>{{order.product }}</td>
+                        <td>{{ order.product.category }}</td>
+                        <td>{{ order.date_created }}</td>
+                        <td>{{ order.status }}</td>
+                        <td><a href="" class="btn btn-sm btn-info">Update</a></td>
+                        <td><a href="" class="btn btn-sm btn-danger">Remove</a></td>
+                        
+                    </tr>
+                    {% endfor %}
+
+
      
                 </table>
             </div>
